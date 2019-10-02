@@ -26,7 +26,6 @@ namespace MilesPerGallon.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 inputs = inputs.Where(s => s.LastName.Contains(searchString));
-                inputs = inputs.Where(s => s.LastName.Contains(searchString));
                 inputs = inputs.Where(s => s.CarModel.Contains(searchString));
             }
 
